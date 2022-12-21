@@ -9,4 +9,13 @@
     <%= user.email %>
   </p>
 
+  <p>
+    <strong>Image:</strong>
+    <% if user.images.length != 0 %>
+      <% user.images.each do |image| %>
+        <%= image_tag image.variant(resize: "200x200"), width: 100 %>  
+      <% end %>
+    <% end %>
+  </p>
+
 </div>
