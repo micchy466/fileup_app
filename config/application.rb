@@ -33,5 +33,8 @@ module FileupApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.active_storage.variant_processor = :mini_magick
+    config.customlogger = Logger.new(Rails.root.join('log/custom.log'))
   end
 end
