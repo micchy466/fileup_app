@@ -67,3 +67,4 @@ end
 gem 'mini_magick'
 gem 'image_processing'
 gem 'dotenv'
+gem "aws-sdk-s3", require: false
